@@ -22,12 +22,7 @@ public class LoginTestCase extends  base{
         String pageTitle = driver.getTitle();
         System.out.println("Page Title: " + pageTitle);
 
-        if (driver.getTitle().equals(" Guru99 Bank Manager HomePage" )) {
-            Assert.assertTrue(true);
-
-        } else {
-            Assert.assertTrue(false);
-        }
+        Assert.assertTrue(driver.getTitle().equals("Guru99 Bank Manager HomePage"));
 
 
     }
